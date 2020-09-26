@@ -7,7 +7,7 @@ job('First-Maven-Project-Via-DSL') {
         scm('* * * * *')
     }
     steps {
-        maven('clean package', mavenName('Maven02'), 'maven-samples/single-module/pom.xml')
+        maven('clean package', 'maven-samples/single-module/pom.xml')
        
     }
     publishers {
