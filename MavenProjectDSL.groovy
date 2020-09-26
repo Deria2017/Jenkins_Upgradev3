@@ -8,6 +8,7 @@ job('First-Maven-Project-Via-DSL') {
     }
     steps {
         maven('clean package', 'maven-samples/single-module/pom.xml')
+        maven{mavenInstallation('Maven-02')}
     }
     publishers {
         //archive the war file generated
